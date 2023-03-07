@@ -1,0 +1,152 @@
+* {
+  font-family: 'Poppins', sans-serif;
+
+}
+body{
+  margin: 0%;
+}
+/*MAIN*/
+
+/*Section-1-Intro*/
+main{
+  background: #EEEEEE;
+}
+.intro{
+  padding: 40px 50px;
+  background-color: #000000;
+  /* background-image: url("/PICTURES/homepage-background.png");
+  background-repeat: no-repeat;
+  background-size: cover; */
+}
+.img-thumbnail{
+  width: 350px;
+  height: 350px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #ffffff;
+}
+#intro-information{
+  color: #ffffff;
+  text-shadow: 2px 1px #CF0A0A;
+  font-size: 23px;
+}
+#intro-information2{
+  margin-top: 20px;
+  color: #ffffff;
+  text-shadow: 2px 1px #CF0A0A;
+  text-align: justify;
+  font-size: 23px;
+} 
+/*Section-2-Skills*/
+#my-section2{
+  padding: 30px;
+  background-color: #CF0A0A;
+}
+.achievements {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 40px;
+}
+
+.achievements .work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+.achievements .work i {
+  width: fit-content;
+  font-size: 70px;
+  color: #000000;
+}
+
+.achievements .work .work-heading {
+  font-size: 20px;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 10px 0;
+}
+
+.achievements .work .work-text {
+  font-size: 15px;
+  color: #000000;
+  margin: 10px 0;
+}
+/*Section-3-AboutMe*/
+#my-section3{
+  padding: 50px;
+  background-color: #DC5F00;
+}
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 40px;
+}
+
+.about-me img {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #000000;
+}
+
+.about-me-text h2 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.about-me-text p {
+  font-size: 20px;
+  color: #000000;
+  margin: 10px 0;
+  padding-right: 30px;
+  text-align: justify;
+}
+/*Footer*/
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000000;
+  padding: 40px 80px;
+}
+
+#footer #copy {
+  color: #ffffff;
+}
+
+#bottom-links {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 40px 0;
+}
+
+#bottom-links #links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 40px;
+}
+
+#bottom-links #links span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin: 10px 0; 
+}
+
+#bottom-links #links a {
+  text-decoration: none;
+  color: #8d8d8d;
+  padding: 10px 20px;
+}

@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Contact</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+  <link rel="stylesheet" href="CSS\style.css">
+  <link rel="stylesheet" href="BOOTSTRAP CSS/bootstrap.min.css">
+  <script src="BOOTSRAP JS/bootstrap.bundle.min.js"></script>
+  <script src="PLUGIN/jquery-3.6.3.js"></script>
+  <style>
+    /*MAIN BODY*/
+    #mycontact-section1 {
+      color: #000000;
+      margin: 100px 250px;
+    }
+
+    #mycontact-section1 h1 {
+      font-size: 50px;
+      text-align: center;
+      font-weight: bolder;
+      margin-bottom: 80px;
+    }
+
+    .phone,
+    .email,
+    .address {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-right: 20px;
+      margin-top: 60px;
+      font-weight: bold;
+    }
+
+    #mycontact-section1 i {
+      margin-right: 1%;
+      margin-bottom: 1rem;
+    }
+
+    .error-message-container {
+      font-size: 12px;
+    }
+
+    /*
+    #form-section {
+      padding-bottom: 10%;
+      text-align: center;
+    }
+
+    .form-section1 {
+      float: left;
+      width: 49%;
+    }
+
+    .form-section2 {
+      float: right;
+      width: 49%;
+    }
+
+    label,
+    input[type="submit"] {
+      margin-top: 20px;
+    }
+
+    label {
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="phone"] {
+      float: right;
+      padding: 15px;
+      width: 50%;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    input[type="message"] {
+      float: left;
+      text-align: left;
+      padding: 15px;
+      padding-bottom: 135px;
+      width: 45%;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+
+    input[type="submit"] {
+      background-color: #CF0A0A;
+      width: 20%;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    } */
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img src="PICTURES\LOGO.png" href="homepage.html"
+            style="width: 50px;height: 50px;border-radius: 50%;"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a style="margin-left: 4em" class="nav-link" aria-current="page" href="homepage.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a style="margin-left: 4em" class="nav-link" href="about.html">ABOUT</a>
+            </li>
+            <li class="nav-item">
+              <a style="margin-left: 4em" class="nav-link" href="contact.html">CONTACT</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div id="mycontact-section1">
+    <div class="row">
+      <div class="col-12">
+        <h1>GET IN TOUCH</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-6">
+        <div class="phone">
+          <i class="fas fa-phone"></i>
+          <p>Phone: +6397-7786-2172</p>
+        </div>
+        <div class="email">
+          <i class="fas fa-envelope"></i>
+          <p>Email: <a style="color:red;text-decoration: none;"
+              href="mailto:portuguezjovel6@gmail.com">portuguezjovel6@gmail.com</a></p>
+        </div>
+        <div class="address">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>Address: Zone 4, Bonifacio, San Fernando, Camarines Sur, Philippines</p>
+        </div>
+      </div>
+      <div class="col-6">
+        <div class="card">
+          <form id="form-section">
+            <div class="card-header">
+              Send me a Message
+            </div>
+            <div id="form-section1">
+              <div class="card-body">
+                <div class="alert alert-info" id="MyAlertMsg" style="display: none;"></div>
+                <div class="row">
+                  <div class="col-12">
+                    <label for="name"></label>
+                    <input type="text" class="form-control" id="Name" placeholder="Your name*">
+                    <div class="error-message-container"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <label for="subject"></label>
+                    <input type="phone" class="form-control" id="Phone" placeholder="Your phone*">
+                    <div class="error-message-container"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <label for="email"></label>
+                    <input type="email" class="form-control" id="Email" placeholder="Your email*">
+                    <div class="error-message-container"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-12">
+                    <label for="message"></label>
+                    <textarea type="message" class="form-control" id="Message" placeholder="Your message*"
+                      style="height: 100px;"></textarea>
+                    <div class="error-message-container"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </form>
+          <div class="card-footer">
+            <button class="btn btn-sm btn-primary" onclick="sendMessage()">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div id="copy">&copy; 2023 Apprentice Developer</div>
+    <div id="bottom-links">
+      <div id="links">
+        <span>More Info</span>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div id="links">
+        <span>Social Links</span>
+        <a href="https://www.facebook.com/jport546" target="_blank"><i class="fab fa-facebook"></i></a>
+        <a href="https://www.youtube.com/channel/UClR8TsB9iIC79MR9qrJLFNQ" target="_blank"><i
+            class="fab fa-youtube"></i></a>
+        <a href="https://www.tiktok.com/@jportuguezzz?is_from_webapp=1&sender_device=pc" target="_blank"><i
+            class="fab fa-tiktok"></i></a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function sendMessage() {
+      var name = $('#Name');
+      var phone = $('#Phone');
+      var email = $('#Email');
+      var message = $('#Message');
+
+
+      if (name.val() == '') {
+        name.closest('div').find('.error-message-container').html('This field is required.').css('color', 'red');
+      }
+      if (phone.val() == '') {
+        phone.closest('div').find('.error-message-container').html('This field is required.').css('color', 'red');
+      }
+      if (email.val() == '') {
+        email.closest('div').find('.error-message-container').html('This field is required.').css('color', 'red');
+      }
+      if (message.val() == '') {
+        message.closest('div').find('.error-message-container').html('This field is required.').css('color', 'red');
+      }
+      if (name.val() != '' && phone.val() != '' && email.val() != '' && message.val() != '') {
+        $('#MyAlertMsg').html('Message has been sent!').css('display', 'block').removeClass('alert-danger').addClass('alert-info');
+      }
+      if(name.val() != ''){
+        name.closest('div').find('.error-message-container').html('This field is required.').css('display', 'none');
+      } 
+      if(phone.val() != ''){
+        phone.closest('div').find('.error-message-container').html('This field is required.').css('display', 'none');
+      } 
+      if(email.val() != ''){
+        email.closest('div').find('.error-message-container').html('This field is required.').css('display', 'none');
+      } 
+      if(message.val() != ''){
+        message.closest('div').find('.error-message-container').html('This field is required.').css('display', 'none');
+      } else {
+        $('#MyAlertMsg').html('Please fill in the required fields.').css('display', 'block').removeClass('alert-info').addClass('alert-danger');
+      }
+    }
+  </script>
+</body>
+
+</html>
